@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="powershell">
+      <UniqueIdentifier>{b663a93b-a7ec-4b97-953a-1632642b317d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="powershell\powershellhelper">
+      <UniqueIdentifier>{3c1cd375-e9c5-436d-a954-8da56698c758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{360b1950-be65-4830-a7be-e313968ed5ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f2fd42d5-2960-48c6-a89e-67ecaa8d2807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\luaengine">
+      <UniqueIdentifier>{87af345a-e3d6-4314-b047-4c6e4b326067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\luaengine\api4lua">
+      <UniqueIdentifier>{ea510972-e0da-4703-a047-362b2bcda533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty">
+      <UniqueIdentifier>{a48ab718-16ec-4533-9494-eddde9ac5554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\cJson">
+      <UniqueIdentifier>{74abc871-1266-411a-a80b-8f1f24a2732f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\detours4">
+      <UniqueIdentifier>{5e6df255-c603-4892-b897-1c902b0edb7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\luasrc">
+      <UniqueIdentifier>{8704474d-9c99-411e-a0a5-d55bab9f1255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\search_algorithm">
+      <UniqueIdentifier>{677d9a06-b070-4218-9a44-f0dce61ccc31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\base64">
+      <UniqueIdentifier>{35c507d5-0e87-4833-a911-37e1af71f2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\crc32">
+      <UniqueIdentifier>{7f9381e2-339a-413f-ab4b-4eb9311ec0eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="powershellhelperbase.h">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="powershellhelperselector.h">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="powershellhelperV2.h">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="powershellhelperV3V4.h">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="powershellhelperV5.h">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="powershellinfo.h">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClInclude>
+    <ClInclude Include="PowershellCmdHandler.h">
+      <Filter>powershell</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerShellDefine.h">
+      <Filter>powershell</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerShellMonitor.h">
+      <Filter>powershell</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtectionBase.h">
+      <Filter>powershell</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="hooksigns.h">
+      <Filter>powershell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\luaengine\Logapi4lua.h">
+      <Filter>include\luaengine\api4lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\luaengine\Luaengine.h">
+      <Filter>include\luaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\luaengine\LuaFunctionDefine.h">
+      <Filter>include\luaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\search_algorithm\search_algorithm.h">
+      <Filter>include\search_algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\base64\Base64.h">
+      <Filter>3rdparty\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\cJson\cJSON.h">
+      <Filter>3rdparty\cJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\crc32\CRC32.h">
+      <Filter>3rdparty\crc32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\detours4\detours.h">
+      <Filter>3rdparty\detours4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\detours4\detver.h">
+      <Filter>3rdparty\detours4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\dtoa_config.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lapi.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lauxlib.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lcode.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lctype.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\ldebug.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\ldo.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lfunc.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lgc.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\llex.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\llimits.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lmem.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lobject.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lopcodes.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lparser.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lprefix.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lstate.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lstring.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\ltable.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\ltm.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lua.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lua.hpp">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\luaconf.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lualib.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lundump.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lvm.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\lzio.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3rdparty\luasrc\strbuf.h">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicHook.h">
+      <Filter>powershell</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="powershellhelperbase.cpp">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="powershellhelperselector.cpp">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="powershellhelperV2.cpp">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="powershellhelperV3V4.cpp">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="powershellhelperV5.cpp">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="powershellinfo.cpp">
+      <Filter>powershell\powershellhelper</Filter>
+    </ClCompile>
+    <ClCompile Include="PowershellCmdHandler.cpp">
+      <Filter>powershell</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerShellMonitor.cpp">
+      <Filter>powershell</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtectionBase.cpp">
+      <Filter>powershell</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\luaengine\Logapi4lua.cpp">
+      <Filter>include\luaengine\api4lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\luaengine\Luaengine.cpp">
+      <Filter>include\luaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\search_algorithm\search_algorithm.cpp">
+      <Filter>include\search_algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\base64\Base64.cpp">
+      <Filter>3rdparty\base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\cJson\cJSON.c">
+      <Filter>3rdparty\cJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\crc32\Crc32.c">
+      <Filter>3rdparty\crc32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\detours4\detours.cpp">
+      <Filter>3rdparty\detours4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\detours4\disasm.cpp">
+      <Filter>3rdparty\detours4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\detours4\image.cpp">
+      <Filter>3rdparty\detours4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\detours4\modules.cpp">
+      <Filter>3rdparty\detours4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\dtoa.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\g_fmt.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lapi.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lauxlib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lbaselib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lbitlib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lcode.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lcorolib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lctype.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ldblib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ldebug.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ldo.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ldump.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lfunc.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lgc.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\linit.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\liolib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\llex.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lmathlib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lmem.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\loadlib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lobject.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lopcodes.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\loslib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lparser.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lstate.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lstring.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lstrlib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ltable.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ltablib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\ltm.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lua.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lua_cjson.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lundump.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lutf8lib.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lvm.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\lzio.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\3rdparty\luasrc\strbuf.c">
+      <Filter>3rdparty\luasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicHook.cpp">
+      <Filter>powershell</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
