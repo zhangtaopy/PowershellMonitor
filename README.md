@@ -1,9 +1,49 @@
 # PowershellMonitor
 PowershellMonitor
 
+# Introduction
+monit powershell behaviour by hooking powershell script engine.
 
-# use lua to monit
+## Features
+* detect obfuscated script
+* log powershell behaviour use lua
+* intercept behaviour by lua(by return non zero)
 
+# Usage
+* Execute powershellexec.exe, it will start a powershell process and inject powershellmonitor.dll into the process, then use this powershell session
+execute poweshell command, the behavior(format to json struct) of the powershellscript will be pass to the luascript(luascript.lua) , then according to your lua script, you can log the behavior
+
+## Behavior list
+### Native api
+ * VirtualAlloc
+ * VirtualAllocEx
+ * WriteProcessMemory
+ * CreateRemoteThread
+ * CreateThread
+ 
+### Normal method
+ * DownloadString
+ * DownloadFile
+ * DownloadData
+ * UploadData
+ * UploadString
+ * UploadFile
+ * Shell.Application.Open
+ * WScript.Shell.Exec
+ * WScript.ShellRegDelete
+ * WScript.ShellRegWrite
+ * CallByname
+ * Assembly Load
+ * OpenRead(url)
+ 
+### Inner command
+ * Invoke-Expression
+ * Invoke-WebRequest
+ 
+# Use lua to monit
+
+```lua
+--[[
 powershell json define:
 functionname
 argcount
@@ -14,8 +54,7 @@ arg4
 arg5
 arg6
 arg7
-
-<code>
+---]]
 function powershellcheck(jsonstring)	
 	local params = cjson.decode(jsonstring)
 	
@@ -40,9 +79,12 @@ function powershellcheck(jsonstring)
 		return 0
 	elseif funcname == 'virtualalloc' or funcname == 'virtualallocex' or funcname == 'virtualprotect' then
 		Log.write(logpath, string.format('[%s] notify -> {native api called}', funcname))
-		return 0
+		return 1
 	end
 	
 	return 0
 end
-</code>
+```
+
+#  References
+* [.NET Internals and Code Injection](https://ntcore.com/files/netint_injection.htm)
