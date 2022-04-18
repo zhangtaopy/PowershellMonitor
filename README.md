@@ -3,6 +3,7 @@ PowershellMonitor
 
 # Introduction
 monit powershell behaviour by hooking powershell script engine.
+Test win7 x86 x64  win10 x86 x64
 
 ## Features
 * detect obfuscated script
@@ -10,8 +11,7 @@ monit powershell behaviour by hooking powershell script engine.
 * intercept behaviour by lua(by return non zero)
 
 # Usage
-* Execute powershellexec.exe, it will start a powershell process and inject powershellmonitor.dll into the process, then use this powershell session
-execute poweshell command, the behavior(format to json struct) of the powershellscript will be pass to the luascript(luascript.lua) , then according to your lua script, you can log the behavior
+* Execute powershellexec.exe, it will start a powershell process and inject powershellmonitor.dll(or powershellmoniter64.dll) into the process, then use this powershell session execute poweshell command, the behavior(format to json struct) of the powershellscript will be pass to the luascript(luascript.lua) , then according to your lua script, you can log the behavior
 
 ## Behavior list
 ### Native api
@@ -86,5 +86,15 @@ function powershellcheck(jsonstring)
 end
 ```
 
-#  References
+# Exampe
+* assembly load:
+![image](https://user-images.githubusercontent.com/2128975/163764678-e60fbdc6-ca97-46f4-aaaf-30141856d1f3.png)
+
+* log:
+
+![image](https://user-images.githubusercontent.com/2128975/163764703-7b8ef895-aa84-4a63-953d-3fb3246f0c2a.png)
+![image](https://user-images.githubusercontent.com/2128975/163764834-92a33c14-c241-40b2-b3b1-51067736dfd7.png)
+
+
+# References
 * [.NET Internals and Code Injection](https://ntcore.com/files/netint_injection.htm)
