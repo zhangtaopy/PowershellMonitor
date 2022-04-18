@@ -70,6 +70,7 @@ void Utils::FormatCheckerJsonString(std::wstring& strFunctionName,
 
     char* p = cJSON_PrintUnformatted(root);
     strJsonString = p;
+    cJSON_Delete(root);
     free(p);
 }
 

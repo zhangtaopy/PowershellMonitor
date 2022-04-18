@@ -31,7 +31,6 @@ public:
     std::wstring strFunctionName;
     PUCHAR FunctionPtr;
     ArgumentTypeVector vecTypes;
-    BOOL bNeedReport;
     NativeCallBackFunc callback;
 };
 

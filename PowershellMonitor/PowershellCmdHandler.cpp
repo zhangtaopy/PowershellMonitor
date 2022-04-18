@@ -289,7 +289,6 @@ void PowershellCmdHandler::InitCommandStrategys()
     auto InitCommand = [this](
         int id,
         LPCWSTR szCommandName,
-        BOOL bNeedReport = TRUE,
         CommandCallBackFunc callback = nullptr)
     {
         CommandStrategyPtr Strategy = std::make_shared<CommandStrategy>();
@@ -302,8 +301,8 @@ void PowershellCmdHandler::InitCommandStrategys()
         m_CommandSet.emplace(strCommandName);
     };
 
-    InitCommand(3001, L"Invoke-Expression", TRUE, std::bind(&PowershellCmdHandler::CommandCallback, this, _1, _2, _3));
-    InitCommand(3002, L"Invoke-WebRequest", TRUE, std::bind(&PowershellCmdHandler::CommandCallback, this, _1, _2, _3));
+    InitCommand(3001, L"Invoke-Expression", std::bind(&PowershellCmdHandler::CommandCallback, this, _1, _2, _3));
+    InitCommand(3002, L"Invoke-WebRequest", std::bind(&PowershellCmdHandler::CommandCallback, this, _1, _2, _3));
 }
 
 BOOL PowershellCmdHandler::IsCmdNeedHandle(std::wstring& strFunctionName)
