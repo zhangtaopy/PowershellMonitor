@@ -3,12 +3,15 @@ PowershellMonitor
 
 # Introduction
 monit powershell behaviour by hooking powershell script engine.
-Test win7 x86 x64  win10 x86 x64
 
 ## Features
 * detect obfuscated script
 * log powershell behaviour use lua
 * intercept behaviour by lua(by return non zero)
+
+## Test
+* win7 x86 x64  powershell 2.0  
+* win10 x86 x64 powershell 5.1
 
 # Usage
 * Execute powershellexec.exe, it will start a powershell process and inject powershellmonitor.dll(or powershellmoniter64.dll) into the process, then use this powershell session execute poweshell command, the behavior(format to json struct) of the powershellscript will be pass to the luascript(luascript.lua) , then according to your lua script, you can log the behavior
