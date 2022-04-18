@@ -3,7 +3,7 @@ PowershellMonitor
 
 
 # use lua to monit
---[[
+
 powershell json define:
 functionname
 argcount
@@ -14,14 +14,18 @@ arg4
 arg5
 arg6
 arg7
----]]
 
-function powershellcheck(jsonstring)
+<code>
+function powershellcheck(jsonstring)	
 	local params = cjson.decode(jsonstring)
+	
 	local funcname = params.functionname
+	
 	local logpath = "e:\\code\\PowershellMonitor\\Release\\log.dat"
+	
 	local binarypath = "e:\\code\\PowershellMonitor\\Release\\binary.dat"
-	local scriptpath = "e:\\code\\PowershellMonitor\\Release\\script.dat"
+	
+	local scriptpath = "e:\\code\\PowershellMonitor\\Release\\script.dat"	
 	
 	if funcname == 'downloadstring' or funcname == 'openread' then
 		Log.write(logpath, string.format('[%s] url -> {%s}', funcname, params.arg1))
@@ -41,3 +45,4 @@ function powershellcheck(jsonstring)
 	
 	return 0
 end
+</code>
